@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Knee Readiness Check | PhysioPro (Night Session POC)</title>
+  <meta name="description" content="A free 8-question self-check based on real return-to-sport criteria — pain-free motion, hop confidence, strength symmetry, and psychological readiness. Not a diagnosis — a starting point for a conversation with a physical therapist.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" href="../../media/physiopro-mark.webp" type="image/webp">
+  <link rel="preload" href="../../fonts/archivo-sub.woff2" as="font" type="font/woff2" crossorigin>
+  <script>document.documentElement.classList.add("js");if(/[?&]clean\b/.test(location.search))document.documentElement.classList.add("is-clean");</script>
+  <link rel="stylesheet" href="../../css/night.css">
+  <link rel="stylesheet" href="../../css/editorial.css">
+<link rel="stylesheet" href="../../css/cinema.css"><link rel="stylesheet" href="../../css/motion.css"><link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  
+  <header class="nav" data-nav>
+    <a class="nav__brand" href="../../" aria-label="PhysioPro — home">
+      <img src="../../media/physiopro-mark.webp" width="22" height="26" alt="">
+      <span>PhysioPro</span>
+    </a>
+    <nav class="nav__right" aria-label="Primary" data-nav7>
+      <a class="nav__link" href="../../physical-therapy/">Physical therapy</a>
+      <a class="nav__link" href="../../injuries/">Injuries</a>
+      <a class="nav__link" href="../../strength-training/">Strength training</a>
+      <a class="nav__link" href="../../return-to-sport/" aria-current="page">Return to sport</a>
+      <a class="nav__link" href="../../learn/">Learn</a>
+      <a class="nav__lang" href="#" data-mock="Spanish version: prototype is English-only for now." lang="es" hreflang="es">ES</a>
+      <a class="nav__book" href="#book" aria-label="Book a Session">Book</a>
+      <button class="nav__menu" type="button" aria-haspopup="dialog" aria-controls="menu" data-menu-open>Menu</button>
+    </nav>
+    <div class="progress" aria-hidden="true"><span data-progress></span></div>
+  </header>
+  
+
+  
+  <dialog class="menu" id="menu" aria-label="Site menu">
+    <div class="menu__inner">
+      <button class="menu__close" type="button" data-menu-close>Close</button>
+      <nav aria-label="Menu">
+        <ul class="menu__list">
+          <li><a href="../../">Home</a></li>
+          <li><a href="../../physical-therapy/">Physical therapy</a></li>
+          <li><a href="../../injuries/">Injuries</a></li>
+          <li><a href="../../strength-training/">Strength training</a></li>
+          <li><a href="../../return-to-sport/" aria-current="page">Return to sport</a></li>
+          <li><a href="../../learn/">Learn</a></li>
+          <li><a href="#book">Book a Session</a></li>
+        </ul>
+      </nav>
+      <div class="menu__aside">
+        <div>
+          <p class="label">Talk to the clinic</p>
+          <ul>
+            <li><a href="https://wa.me/526634875859" data-mock="Prototype: this would open WhatsApp. Nothing was sent.">WhatsApp · +52 663 487 5859</a></li>
+            <li><a href="tel:+526634875859" data-mock="Prototype: this would call +52 663 487 5859. Nothing was dialled.">Call +52 663 487 5859</a></li>
+            <li><a href="../../ask-leonardo.html">Ask Leonardo a question</a></li>
+            <li><a href="../../contact.html">Contact &amp; location</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="label">Zona Río, Tijuana</p>
+          <address>Jose Maria Velazco 2632, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.<br>Monday–Friday · 8:00–20:00</address>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  
+
+  <main id="main" tabindex="-1">
+
+    <header class="page-hero page-hero--type page-hero--short">
+      <div class="page-hero__inner">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="../../">Home</a></li>
+            <li><a href="https://physioprotijuana.com/knee">Knee</a></li>
+            <li><span aria-current="page">Readiness check</span></li>
+          </ol>
+        </nav>
+        <p class="eyebrow">Free Self-Check · Knee</p>
+        <h1>Is your knee ready to return to sport?</h1>
+        <div class="page-hero__line" aria-hidden="true"></div>
+        <p class="page-hero__dek">Eight questions, built around the same criteria used in knee return-to-sport testing — pain-free motion, hop confidence, strength symmetry, stability, and psychological readiness. This is not a diagnosis. It's a quick, honest look at where you likely stand, so you know what's worth confirming with a physical therapist.</p>
+        <div class="actions">
+          <a class="link link--long" href="../../knee-return-to-sport.html">Read the full RTS criteria this is based on</a>
+        </div>
+        <p class="hero-micro">Takes about 2 minutes. No diagnosis given — just a read on where to focus next.</p>
+      </div>
+    </header>
+
+    <div class="index">
+      <section class="shelf" id="check" aria-labelledby="h-check">
+        <div class="shelf__head">
+          <p class="eyebrow">The check</p>
+          <h2 id="h-check">Answer honestly — based on how your knee actually feels right now.</h2>
+        </div>
+
+        <form class="quiz" id="rc-form" novalidate data-quiz>
+          <div class="quiz__bar" aria-hidden="true"><span data-quiz-bar></span></div>
+          <fieldset class="quiz__q" id="q1" aria-describedby="quiz-err">
+            <legend tabindex="-1"><span class="quiz__num">Question 1 of 8</span> <span class="quiz__text">Can you fully bend and straighten your knee without pain during daily activities — squatting, stairs, sitting?</span></legend>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q1" value="3"><span>Yes, full pain-free range of motion</span></label>
+              <label class="quiz__opt"><input type="radio" name="q1" value="2"><span>Mostly, with occasional discomfort</span></label>
+              <label class="quiz__opt"><input type="radio" name="q1" value="0"><span>Noticeably limited or painful</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="quiz__q" id="q2" aria-describedby="quiz-err">
+            <legend tabindex="-1"><span class="quiz__num">Question 2 of 8</span> <span class="quiz__text">If you were asked to do a single-leg hop for distance right now, how confident would you feel?</span></legend>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q2" value="3"><span>Fully confident, no hesitation</span></label>
+              <label class="quiz__opt"><input type="radio" name="q2" value="2"><span>Some hesitation, but I'd do it</span></label>
+              <label class="quiz__opt"><input type="radio" name="q2" value="0"><span>I wouldn't attempt it</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="quiz__q" id="q3" aria-describedby="quiz-err">
+            <legend tabindex="-1"><span class="quiz__num">Question 3 of 8</span> <span class="quiz__text">Compared to your other leg, how does your affected knee and thigh feel in terms of strength?</span></legend>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q3" value="3"><span>Feels equal to the other side</span></label>
+              <label class="quiz__opt"><input type="radio" name="q3" value="2"><span>Feels slightly weaker</span></label>
+              <label class="quiz__opt"><input type="radio" name="q3" value="0"><span>Feels clearly weaker</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="quiz__q" id="q4" aria-describedby="quiz-err">
+            <legend tabindex="-1"><span class="quiz__num">Question 4 of 8</span> <span class="quiz__text">Does your knee still swell after activity or by the end of the day?</span></legend>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q4" value="3"><span>No swelling</span></label>
+              <label class="quiz__opt"><input type="radio" name="q4" value="1"><span>Mild, occasional swelling</span></label>
+              <label class="quiz__opt"><input type="radio" name="q4" value="0"><span>Regular or noticeable swelling</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="quiz__q" id="q5" aria-describedby="quiz-err">
+            <legend tabindex="-1"><span class="quiz__num">Question 5 of 8</span> <span class="quiz__text">Does your knee feel stable when cutting, pivoting, or changing direction quickly?</span></legend>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q5" value="3"><span>Yes, feels stable</span></label>
+              <label class="quiz__opt"><input type="radio" name="q5" value="1"><span>Somewhat, but I'm cautious</span></label>
+              <label class="quiz__opt"><input type="radio" name="q5" value="0"><span>No — it feels unstable or "gives way"</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="quiz__q" id="q6" aria-describedby="quiz-err">
+            <legend tabindex="-1"><span class="quiz__num">Question 6 of 8</span> <span class="quiz__text">How confident do you feel trusting your knee under real sport or training conditions — not just in a controlled setting?</span></legend>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q6" value="3"><span>Very confident</span></label>
+              <label class="quiz__opt"><input type="radio" name="q6" value="1"><span>Somewhat confident, some hesitation or fear</span></label>
+              <label class="quiz__opt"><input type="radio" name="q6" value="0"><span>Not confident at all</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="quiz__q" id="q7" aria-describedby="quiz-err">
+            <legend tabindex="-1"><span class="quiz__num">Question 7 of 8</span> <span class="quiz__text">If you've had knee surgery — ACL reconstruction, meniscus repair, or similar — has a surgeon or physical therapist formally cleared you to begin return-to-sport testing? (If you haven't had surgery, choose the first option.)</span></legend>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q7" value="3"><span>Yes, formally cleared — or no surgery was involved</span></label>
+              <label class="quiz__opt"><input type="radio" name="q7" value="1"><span>Not sure</span></label>
+              <label class="quiz__opt"><input type="radio" name="q7" value="0"><span>Not yet cleared — still in early recovery</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="quiz__q" id="q8" aria-describedby="quiz-err">
+            <legend tabindex="-1"><span class="quiz__num">Question 8 of 8</span> <span class="quiz__text">Have you had any objective return-to-sport testing done — hop tests, strength testing, or a limb symmetry comparison?</span></legend>
+            <div class="quiz__opts">
+              <label class="quiz__opt"><input type="radio" name="q8" value="3"><span>Yes, and I met the standard thresholds</span></label>
+              <label class="quiz__opt"><input type="radio" name="q8" value="1"><span>No, I haven't been tested yet</span></label>
+              <label class="quiz__opt"><input type="radio" name="q8" value="0"><span>Yes, but I didn't meet the standard thresholds</span></label>
+            </div>
+          </fieldset>
+          <div class="quiz__nav">
+            <button class="btn" type="button" data-quiz-next><span class="btn__face">Next question <span aria-hidden="true">→</span></span></button>
+            <button class="btn" type="submit" data-quiz-submit><span class="btn__face">See where I stand <span aria-hidden="true">→</span></span></button>
+            <button class="link link--back" type="button" data-quiz-back>Previous question</button>
+          </div>
+          <p class="quiz__err" id="quiz-err" role="alert" data-quiz-err></p>
+        </form>
+
+        <div class="result" id="rc-results" aria-live="polite" data-quiz-results>
+          <div class="result__band" id="rc-band-high" hidden>
+            <p class="eyebrow">Your result</p>
+            <h3 tabindex="-1">You may be close — let's confirm with objective testing.</h3>
+            <p>Your answers suggest good pain-free motion, decent confidence under load, and a knee that mostly feels trustworthy. That's a good sign — but "feels ready" and "tests ready" are not always the same knee. The only way to know for certain is a real hop battery, strength comparison, and clinical assessment, not a self-report. This is exactly the kind of case worth confirming with objective testing before you fully return.</p>
+            <p>Read more on what that testing actually looks like: <a href="../../knee-return-to-sport.html">Knee Return-to-Sport Testing →</a></p>
+          </div>
+          <div class="result__band" id="rc-band-mid" hidden>
+            <p class="eyebrow">Your result</p>
+            <h3 tabindex="-1">A few gaps worth addressing first.</h3>
+            <p>Your answers point to a knee that's made real progress but still has one or two areas — strength symmetry, confidence under load, stability, or lingering swelling — that are worth closing before you push back into full sport demands. This is a normal, common place to be in the rehab process. The next step is identifying exactly which gap matters most for your case, with a real assessment rather than guessing.</p>
+            <p>See how the phased pathway works: <a href="https://physioprotijuana.com/knee">Knee Rehabilitation Pathway →</a></p>
+          </div>
+          <div class="result__band" id="rc-band-low" hidden>
+            <p class="eyebrow">Your result</p>
+            <h3 tabindex="-1">Let's start with a proper evaluation.</h3>
+            <p>Your answers suggest your knee isn't there yet — whether that's pain, swelling, instability, low confidence, or simply not having been cleared or tested yet. That's not a bad sign, it's useful information. Pushing toward sport demands before these areas are addressed is one of the more common ways knees get reinjured. The right next step is a clinical assessment to figure out exactly what your knee needs and build a real plan from there.</p>
+            <p>What that first assessment looks like: <a href="../../first-session.html">Your First Session →</a></p>
+          </div>
+          <div class="result__after" data-quiz-after data-dock-hide hidden>
+            <p class="result__note">This self-check is for general education only and does not diagnose or replace a clinical assessment. If anything here feels concerning — locking, giving way, significant swelling, or an inability to bear weight — don't wait to be seen.</p>
+            <div class="actions">
+              <a class="btn" href="https://wa.me/526634875859?text=Hello%2C%20I%20just%20did%20the%20knee%20readiness%20check%20and%20I%27d%20like%20to%20book%20an%20assessment" data-mock="Prototype: this would open WhatsApp with a pre-filled readiness-check booking message. Nothing was sent."><span class="btn__face">Book on WhatsApp <span aria-hidden="true">→</span></span></a>
+              <a class="link" href="tel:+526634875859" data-mock="Prototype: this would call +52 663 487 5859. Nothing was dialled.">Call +52 663 487 5859</a>
+              <a class="link" href="../../ask-leonardo.html">Ask Leonardo a question</a>
+              <a class="link link--long" href="../../first-session.html">See what session one looks like</a>
+              <a class="link link--long" href="../../#lead">Or leave your details and Leonardo will reach out</a>
+            </div>
+            <div class="actions">
+              <button class="link" type="button" data-quiz-restart>Take the check again</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shelf" id="basis" aria-labelledby="h-basis">
+        <div class="shelf__head">
+          <p class="eyebrow">Where these questions come from</p>
+          <h2 id="h-basis">Not made up — drawn from real return-to-sport criteria.</h2>
+        </div>
+        <div class="prose">
+          <p>Every question above traces back to a criterion actually used in knee return-to-sport testing — limb symmetry index, hop battery confidence, effusion checks, and psychological readiness scales like the ACL-RSI. None of it is a diagnosis. A self-report can't replace a hop test, a strength comparison, or a clinical exam — but it can tell you honestly whether you're likely close, or whether there's real work left. For the full clinical picture — including where the evidence is genuinely still unsettled — read <a href="../../knee-return-to-sport.html">Knee Return-to-Sport Testing: ACL &amp; Meniscus Criteria →</a></p>
+        </div>
+      </section>
+    </div>
+
+    
+    <section class="book-block" id="book" aria-labelledby="h-book" data-dock-hide>
+      <div class="book-block__inner">
+        <div>
+          <p class="eyebrow">Ready for the real answer</p>
+          <h2 id="h-book">Book a knee return-to-sport assessment.</h2>
+        </div>
+        <div>
+          <p class="book-block__note">Full testing battery, documented criteria, one session. $750 MXN. Zona Rio, Tijuana.</p>
+          <div class="actions">
+            <a class="btn btn--ember" href="https://wa.me/526634875859?text=Hello%2C%20I%27m%20interested%20in%20booking%20a%20knee%20return-to-sport%20assessment%20at%20PhysioPro" data-mock="Prototype: this would open WhatsApp with a pre-filled knee return-to-sport booking message. Nothing was sent."><span class="btn__face">Book on WhatsApp <span aria-hidden="true">→</span></span></a>
+            <a class="link" href="tel:+526634875859" data-mock="Prototype: this would call +52 663 487 5859. Nothing was dialled.">Call +52 663 487 5859</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer class="foot">
+    <div class="foot__brand">
+      <a class="foot__mark" href="../../"><img src="../../media/physiopro-mark.webp" width="22" height="26" alt=""> PhysioPro</a>
+      <p class="foot__line">Performance rehabilitation.</p>
+      <p>Assessment and treatment from session one · $750 MXN · Every session with Leonardo.</p>
+      <a class="btn" href="#book"><span class="btn__face">Book an evaluation <span aria-hidden="true">→</span></span></a>
+    </div>
+    <nav class="foot__col" aria-label="What we treat">
+      <p class="label">Treat</p>
+      <ul>
+        <li><a href="../../first-session.html">Physical Therapy</a></li>
+        <li><a href="../../exercise-prescription.html">Exercise Prescription</a></li>
+        <li><a href="../../strength-conditioning.html">Strength training</a></li>
+        <li><a href="../../knee.html">Knee</a></li>
+        <li><a href="../../knee-pain.html">Knee pain</a></li>
+        <li><a href="../../shoulder.html">Shoulder</a></li>
+        <li><a href="../../low-back.html">Low back</a></li>
+        <li><a href="../../combat-sports-rehab.html">Combat sports</a></li>
+        <li><a href="../../return-to-running.html">Return to running</a></li>
+        <li><a href="../../post-surgical-rehab.html">Post-surgical</a></li>
+      </ul>
+    </nav>
+    <nav class="foot__col" aria-label="Learn">
+      <p class="label">Learn</p>
+      <ul>
+        <li><a href="../../how-return-to-sport-testing-works.html">How return-to-sport testing works</a></li>
+        <li><a href="../../knee-return-to-sport.html">Knee return-to-sport testing</a></li>
+        <li><a href="../../can-you-keep-training-while-injured.html">Can you keep training while injured?</a></li>
+        <li><a href="../../do-you-need-an-mri-before-physical-therapy.html">Do you need an MRI first?</a></li>
+        <li><a href="../../knee-readiness-check.html" aria-current="page">Knee readiness check</a></li>
+        <li><a href="../../body-resources.html">Body &amp; joint resources</a></li>
+        <li><a href="../../resources.html">All resources</a></li>
+      </ul>
+    </nav>
+    <div class="foot__col foot__col--clinic">
+      <p class="label">Clinic</p>
+      <address>Jose Maria Velazco 2632, Zona Urbana Rio Tijuana, 22010 Tijuana, B.C.</address>
+      <p>Monday–Friday · 8:00 AM – 8:00 PM</p>
+      <ul>
+        <li><a href="https://maps.google.com/?q=Jose+Maria+Velazco+2632,+Zona+Urbana+Rio+Tijuana,+22010+Tijuana,+B.C.">View on Google Maps</a></li>
+        <li><a href="../../contact.html">Contact</a></li>
+        <li><a href="../../ask-leonardo.html">Ask Leonardo</a></li>
+        <li><a href="../../first-session.html">Your first session</a></li>
+        <li><a href="../../about-leonardo.html">About Leonardo</a></li>
+        <li><a href="../../success-stories.html">Success stories</a></li>
+      </ul>
+    </div>
+    <nav class="foot__col" aria-label="In this section">
+      <p class="label">In this section</p>
+      <ul>
+        <li><a href="../../return-to-sport/">Return to Sport</a></li>
+        <li><a href="../../return-to-sport/stages/">Stages</a></li>
+        <li><a href="../../return-to-sport/functional-testing/">Functional testing</a></li>
+        <li><a href="../../return-to-sport/sport-pathways/">Sport pathways</a></li>
+      </ul>
+    </nav>
+    <div class="foot__bottom">
+      <nav class="foot__legal" aria-label="Legal">
+        <a href="../../aviso-privacidad.html" lang="es">Aviso de Privacidad</a>
+        <a href="https://physioprotijuana.com/aviso-medico" lang="es">Aviso Médico</a>
+        <a href="https://physioprotijuana.com/aviso-cookies">Cookies</a>
+        <a href="https://physioprotijuana.com/derechos-arco" lang="es">Derechos ARCO</a>
+      </nav>
+      <p class="foot__fine">© PhysioPro · Night Session prototype — not the live site.</p>
+    </div>
+  </footer>
+
+  <nav class="dock" data-dock aria-label="Quick booking" aria-hidden="true">
+    <a class="dock__book" href="#book" tabindex="-1">Book an evaluation</a>
+    <a class="dock__ask" href="../../ask-leonardo.html" tabindex="-1">Ask Leonardo</a>
+  </nav>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+  
+
+  <script src="../../js/night.js" defer></script>
+  <script src="../../js/readiness.js" defer></script>
+<script src="../../js/cinema.js" defer></script><script src="../../js/motion.js" defer></script>
+</body>
+</html>
