@@ -1,0 +1,21 @@
+/* site-core.css — owner: orchestrator. Shared skeleton-kit styles on the approved cinematic tokens (unified.css).
+   Static only: no animation, no blur, no scroll-driven behaviour. */
+.banner--skeleton { background: #1c1408; color: var(--glow); border-bottom: 1px solid rgba(255,138,0,.35); font-weight: 600; letter-spacing: .03em; text-transform: none; }
+.site-header--tree .site-nav { display: none; gap: 22px; align-items: center; flex-wrap: wrap; } .site-header--tree .site-nav a { text-decoration: none; font-weight: 600; font-size: .95rem; }
+.site-header--tree .nav-book { margin-left: auto; }
+@media (min-width: 900px) { .site-header--tree .site-nav { display: flex; flex: 1; } .site-header--tree .site-menu { display: none; } }
+.menu-tree, .menu-tree ul { list-style: none; margin: 0; padding: 0; } .menu-tree > li { border-top: 1px solid var(--line); padding: 10px 0; } .menu-tree > li > a { font-weight: 700; } .menu-tree ul { padding: 6px 0 0 16px; } .menu-tree ul a { color: var(--text-2); font-size: .95rem; display: inline-block; padding: 6px 0; }
+.site-menu nav { padding: 8px 0 12px; }
+.kit-outline__list { list-style: none; margin: 24px 0 0; padding: 0; display: grid; gap: 14px; }
+.kit-slot { display: grid; grid-template-columns: 44px 1fr; gap: 14px; border: 1px solid var(--line); background: var(--surface); padding: 18px; } .kit-slot h3 { margin: 0 0 .3em; font-size: 1.1rem; } .kit-slot p { margin: 0; color: var(--text-2); } .kit-slot__n { font: 700 .85rem var(--display); color: var(--ember); letter-spacing: .1em; padding-top: 4px; } .kit-slot__status { font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; margin-top: .6em !important; }
+.asset-slot { margin: 28px 0; } .asset-slot__frame { aspect-ratio: var(--aspect, 16 / 9); border: 1px dashed rgba(255,138,0,.45); background: radial-gradient(120% 90% at 20% 10%, rgba(255,138,0,.08), transparent 60%), #0e0e0e; display: grid; place-content: center; gap: 6px; text-align: center; padding: 16px; color: var(--text-2); font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; } .asset-slot__id { color: var(--ember); font-weight: 700; word-break: break-all; } .asset-slot figcaption { margin-top: 10px; color: var(--text-2); font-size: .85rem; max-width: var(--measure); }
+.kit-live { border: 1px solid var(--line); border-left: 3px solid var(--ember); background: var(--surface); padding: 20px 22px; margin: 36px 0; } .kit-live h2 { font-size: 1.15rem; } .kit-live h3 { font-size: .95rem; color: var(--text-2); margin-top: 1.2em; } .link-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 4px; } .link-list a { word-break: break-all; }
+.kit-cta { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: linear-gradient(180deg, #0f0f0f, #0a0a0a); padding: 56px 0; margin-top: 56px; } .kit-cta h2 { margin-bottom: .3em; } .kit-cta p { color: var(--text-2); max-width: var(--measure); }
+.kit-empty { text-align: left; } .kit-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0 0; }
+.kit-children, .kit-outline, .kit-related { margin-top: 48px; } .grid--children { grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); }
+.footer-links { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-wrap: wrap; gap: 8px 22px; } .footer-links a { text-decoration: none; color: var(--text-2); } .footer-links a:hover { color: var(--glow); }
+.btn--disabled, [aria-disabled="true"].btn { opacity: .55; cursor: not-allowed; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+.site-header--tree .site-menu { flex: 0 0 auto; margin-left: auto; order: 2; } .site-header--tree .site-menu[open] { flex: 1 0 100%; order: 3; } .site-header--tree .site-menu[open] summary { margin-left: auto; width: fit-content; } .site-header--tree .site-menu[open] nav { width: 100%; }
+.kit-demo-links { margin-top: 48px; }

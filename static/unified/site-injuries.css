@@ -1,0 +1,19 @@
+/* Injuries area styles (Agent 2). Static, no motion. Prefix inj-. Tokens come from unified.css. */
+.inj-page { padding-block: clamp(24px, 5vw, 56px); display: grid; gap: clamp(32px, 6vw, 64px); }
+.inj-groups__grid, .inj-more .grid { margin-top: 20px; }
+.inj-slots__row { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); margin-top: 16px; }
+.inj-slots .asset-slot__frame { background: linear-gradient(160deg, #0a0a0a, #141414); border: 1px solid var(--line, #2a2a2a); }
+.inj-slots .asset-slot__id { color: var(--ember, #ff8a00); }
+.inj-conditions .empty { margin-top: 16px; border-left: 2px solid var(--ember, #ff8a00); }
+.inj-demo-tag { display: inline-block; margin: 12px 0 0; padding: 6px 12px; border: 1px solid var(--line, #2a2a2a); color: var(--ember, #ff8a00); font-size: .85rem; letter-spacing: .04em; }
+.inj-urgent { padding: 20px; border: 1px solid var(--ember, #ff8a00); background: #0e0e0e; }
+.inj-urgent h2 { margin-top: 0; }
+.inj-review, .inj-consent, .inj-refs { padding: 20px; border: 1px solid var(--line, #2a2a2a); background: var(--surface, #111); }
+.inj-status { display: grid; grid-template-columns: max-content 1fr; gap: 8px 20px; margin: 12px 0; }
+.inj-status dt { color: var(--muted, #a8a8a8); }
+.inj-status dd { margin: 0; font-weight: 600; }
+.inj-chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 12px 0; }
+.inj-chip { display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 1px solid var(--line, #2a2a2a); color: var(--muted, #a8a8a8); }
+.inj-chip--on { border-color: var(--ember, #ff8a00); color: var(--ember, #ff8a00); }
+.inj-note { color: var(--muted, #a8a8a8); }
+@media (max-width: 480px) { .inj-status { grid-template-columns: 1fr; } }
